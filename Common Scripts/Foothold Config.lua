@@ -68,7 +68,7 @@ if FootholdLocalization then
 end
 -- "Modern" or "Coldwar" ("Gulfwar" if the map is Iraq).
 -- In the editor, Don't copy to all ships, make sure all planes in every warehouse are set to LIMITED!!!
-Era = "Modern" -- does not work in Afghanistan or kola
+Era = "Coldwar" -- does not work in Afghanistan or kola -- 1975 Vietnam-era setup uses Coldwar as the base
 
 -- ONLY VALID ON CAUCASUS, PERSIAN GULF, SYRIA AND AFGHANISTAN.
 -- if false, the mission will start from the other end. Carrier zone will be disabled.
@@ -78,12 +78,12 @@ StartNormal = true
 -- If false, you will have a menu where you can choose to restart the mission. 
 AutoRestart = false
 
-NoSA10AndSA11 = false -- If true: remove SA-10 and SA-11 (replaced by older SAMs).
+NoSA10AndSA11 = true -- If true: remove SA-10 and SA-11 (replaced by older SAMs). -- 1975: removed, falls back to SA-2/SA-3/SA-6.
 
 -- There is no Pantsir or Tor M2 in the coldwar Era, but in modern, you can stil replace them.
-NoTorM2AndPantsir = false -- If true: Pantsir and Tor M2 will be replaced with random groups, including SA-15, SA-19, SA-8 and SA-13.
+NoTorM2AndPantsir = true -- If true: Pantsir and Tor M2 will be replaced with random groups, including SA-15, SA-19, SA-8 and SA-13. -- 1975: removed.
 
-NoSA15 = false -- If true: SA-15 will be replaced by random groups, including SA-19, SA-8, SA-13 and SA-9.
+NoSA15 = true -- If true: SA-15 will be replaced by random groups, including SA-19, SA-8, SA-13 and SA-9. -- 1975: removed (Tor is 1986).
 
 -- Modular, Automatic and Network capable Targeting and Interception System for Air Defenses. (MANTIS)
 -- Once the player is within, the sam system will turn on. If you fire HARP, Talds or Jsaw, they will turn off and move.
@@ -1179,189 +1179,53 @@ phaseCycleTimerIdle = 0.5      -- Relaxed cadence when idle. Raise to 0.8-1.0 if
 -- In this list, you can either remove or add what is allowed in the coldwar era.
 -- @gui label="Allowed Aircraft" installPolicy="keepTable" editor="bucket"
 allowedPlanes = {
-    "A-10A",
-    "A-10C",
-    "A-10C_2",
-    "A-4E-C",
-    "AH-1W",
-    "AH-64D_BLK_II",
-    "AH-6J",
-    "AJS37",
-    "An-30M",
-    "AV8BNA",
-    "Bronco-OV-10A",
-    "C-101CC",
-    "C-130J-30",
-    "CH-47Fbl1",
-    "E-2C",
-    "F/A-18A",
-    "F-100D",
-    "F-14A",
+    -- 1975 Vietnam-era BLUE (Western) airframes only.
+    "A-4E-C",              -- Skyhawk (mod)
+    "Bronco-OV-10A",       -- OV-10A (mod)
+    "E-2C",                -- Hawkeye AEW (1973)
+    "F-100D",              -- Super Sabre (mod)
+    "F-14A",               -- Tomcat (fleet service 1974)
     "F-14A-135-GR",
     "F-14A-135-GR-Early",
     "F-14A-95-GR",
-    "F-14B",
-    "F-15C",
-    "F-15E",
-    "F-15ESE",
-    "F-16A MLU",
-    "F-16C_50",
-    "F-4E-45MC",
-    "F-5E-3",
+    "F-4E-45MC",           -- Phantom II
+    "F-5E-3",              -- Tiger II (1972)
     "F-5E-3_FC",
-    "F-86F Sabre",
-    "FA-18C_hornet",
-    "Hercules",
-    "Ka-27",
-    "L-39C",
-    "M-2000C",
-    "MB-339A",
-    "MB-339APAN",
-    "MH-60R",
-    "MH-6J",
-    "Mi-24P",
-    "Mi-24V",
-    "Mi-28NE",
-    "Mi-8MT",
-    "MiG-15bis",
-    "MiG-15bis_FC",
-    "MiG-19P",
-    "MiG-21Bis",
-    "MiG-23MLD",
-    "MiG-29 Fulcrum",
-    "MiG-29A",
-    "Mirage-F1AD",
-    "Mirage-F1AZ",
-    "Mirage-F1B",
-    "Mirage-F1BD",
-    "Mirage-F1BE",
-    "Mirage-F1BQ",
-    "Mirage-F1C",
-    "Mirage-F1C-200",
-    "Mirage-F1CE",
-    "Mirage-F1CG",
-    "Mirage-F1CH",
-    "Mirage-F1CJ",
-    "Mirage-F1CK",
-    "Mirage-F1CR",
-    "Mirage-F1CT",
-    "Mirage-F1CZ",
-    "Mirage-F1DDA",
-    "Mirage-F1ED",
-    "Mirage-F1EDA",
-    "Mirage-F1EE",
-    "Mirage-F1EH",
-    "Mirage-F1EQ",
-    "Mirage-F1M-CE",
-    "Mirage-F1M-EE",
-    "OH58D",
-    "OH-6A",
-    "P3C_Orion",
-    "SA342L",
-    "SA342M",
-    "SA342Minigun",
-    "SA342Mistral",
-    "SU22",
-    "Su-24MR",
-    "Su-25",
-    "UH-1H",
-    "UH-60A",
-    "UH-60L",
-    "UH-60L_DAP",
+    "F-86F Sabre",         -- older, retained for allied air forces
+    "Hercules",            -- C-130 transport for CTLD logistics
+    "OH-6A",               -- Loach scout
+    "P3C_Orion",           -- maritime patrol (1969)
+    "UH-1H",               -- Huey
+    -- Vietnam War Vessels (VWV) mod - AI assets
+    "vwv_a1_skyraider",    -- A-1 Skyraider
+    "vwv_ad4_skyraider",   -- AD-4 Skyraider
+    "a_37_dragonfly",      -- A-37 Dragonfly
+    "vwv_ra-5",            -- RA-5C Vigilante
+    "vwv_ch46d",           -- CH-46D Sea Knight (early)
+    "vwv_ch46d_late",      -- CH-46D Sea Knight (late)
+    "vwv_ec-121",          -- EC-121 Warning Star (AEW)
+    "vwv_crusader",        -- F-8 Crusader
+    "vwv_crusader_np",     -- F-8 Crusader (non-pilot variant)
+    "sh2f",                -- SH-2F Seasprite
+    "uh2a",                -- UH-2A Seasprite
+    "uh2b",                -- UH-2B Seasprite
+    "uh2c",                -- UH-2C Seasprite
+    "vwv_o-1",             -- O-1 Bird Dog (FAC)
+    "vwv_rf101b",          -- RF-101B Voodoo (recon)
 }
 
 -- In this list, you can either remove or add what is allowed for the (RED SIDE) in the coldwar era.
 -- @gui label="Allowed RED Aircraft" installPolicy="keepTable" editor="bucket"
 allowedPlanesRed = {
-    "A-10A",
-    "A-10C",
-    "A-10C_2",
-    "A-4E-C",
-    "AH-1W",
-    "AH-64D_BLK_II",
-    "AH-6J",
-    "AJS37",
-    "An-30M",
-    "AV8BNA",
-    "Bronco-OV-10A",
-    "C-101CC",
-    "C-130J-30",
-    "CH-47Fbl1",
-    "E-2C",
-    "F/A-18A",
-    "F-100D",
-    "F-14A",
-    "F-14A-135-GR",
-    "F-14A-135-GR-Early",
-    "F-14A-95-GR",
-    "F-14B",
-    "F-15C",
-    "F-15E",
-    "F-15ESE",
-    "F-16A MLU",
-    "F-16C_50",
-    "F-4E-45MC",
-    "F-5E-3",
-    "F-5E-3_FC",
-    "F-86F Sabre",
-    "FA-18C_hornet",
-    "Hercules",
-    "Ka-27",
-    "L-39C",
-    "M-2000C",
-    "MB-339A",
-    "MB-339APAN",
-    "MH-60R",
-    "MH-6J",
-    "Mi-24P",
-    "Mi-24V",
-    "Mi-28NE",
-    "Mi-8MT",
+    -- 1975 Vietnam-era RED (communist) airframes only.
     "MiG-15bis",
     "MiG-15bis_FC",
-    "MiG-19P",
+    "MiG-19P",             -- J-6
     "MiG-21Bis",
-    "MiG-23MLD",
-    "MiG-29 Fulcrum",
-    "MiG-29A",
-    "Mirage-F1AD",
-    "Mirage-F1AZ",
-    "Mirage-F1B",
-    "Mirage-F1BD",
-    "Mirage-F1BE",
-    "Mirage-F1BQ",
-    "Mirage-F1C",
-    "Mirage-F1C-200",
-    "Mirage-F1CE",
-    "Mirage-F1CG",
-    "Mirage-F1CH",
-    "Mirage-F1CJ",
-    "Mirage-F1CK",
-    "Mirage-F1CR",
-    "Mirage-F1CT",
-    "Mirage-F1CZ",
-    "Mirage-F1DDA",
-    "Mirage-F1ED",
-    "Mirage-F1EDA",
-    "Mirage-F1EE",
-    "Mirage-F1EH",
-    "Mirage-F1EQ",
-    "Mirage-F1M-CE",
-    "Mirage-F1M-EE",
-    "OH58D",
-    "OH-6A",
-    "P3C_Orion",
-    "SA342L",
-    "SA342M",
-    "SA342Minigun",
-    "SA342Mistral",
-    "SU22",
-    "Su-24MR",
-    "Su-25",
-    "UH-1H",
-    "UH-60A",
-    "UH-60L",
-    "UH-60L_DAP",
+    "Mi-8MT",             -- Hip transport
+    -- Vietnam War Vessels (VWV) mod - AI assets
+    "vwv_mig17f",         -- MiG-17F Fresco
+    "vwv_mig21mf",        -- MiG-21MF Fishbed J
 }
 -- The list is applied if AllowMods are true and on Modern era.
 -- Make sure you have the mods installed on the server and the client.

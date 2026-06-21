@@ -52,22 +52,22 @@ upgrades = {
 	},
 	airfield2palmyra = {
 		blue = {'blueInfantry','bluePD2', 'bluePD1'},
-		red = {'Enemy ground forces','Red SAM SHORAD SA-8', 'Red SAM SHORAD SA-8' , 'Red SAM AAA','Red Armour Group 2', 'Red SAM AAA 2', 'Red SAM SHORAD SA-19', 'Red SAM SHORAD SA-19' , 'Red SAM SA-11'}
+		red = {'Enemy ground forces','Red SAM SHORAD SA-8', 'Red SAM SHORAD SA-8' , 'Red SAM AAA','Red Armour Group 2', 'Red SAM AAA 2', 'Red SAM SHORAD ZSU-23', 'Red SAM SHORAD ZSU-23' , 'Red SAM SA-11'}
 	},  
 	
 	airfield2 = {
 		blue = {'blueInfantry','bluePD2', 'bluePD1'},
-		red = {'Enemy ground forces','Red Armor Group', 'Red SAM SHORAD SA-8', 'Red SAM SHORAD Tor M2' ,'Red SAM AAA', 'Red SAM AAA 2', 'Red SAM SHORAD SA-19', 'Red SAM SHORAD SA-19','Red Armour Group 2', 'Red Arty 2'}
+		red = {'Enemy ground forces','Red Armor Group', 'Red SAM SHORAD SA-8', 'Red SAM SHORAD Tor M2' ,'Red SAM AAA', 'Red SAM AAA 2', 'Red SAM SHORAD ZSU-23', 'Red SAM SHORAD ZSU-23','Red Armour Group 2', 'Red Arty 2'}
 	},  
 
 	Incirlik = {
 		blue = {'blueInfantry','bluePD2', 'bluePD1'},
-		red = {'Enemy ground forces','Red Armor Group', 'Red SAM SHORAD SA-8', 'Red SAM SHORAD Tor M2' ,'Red SAM AAA', 'Red SAM AAA 2', 'Red SAM SHORAD SA-19', 'Red SAM SHORAD Pantsir S1','Red Armour Group 2', 'Red Arty 2'}
+		red = {'Enemy ground forces','Red Armor Group', 'Red SAM SHORAD SA-8', 'Red SAM SHORAD Tor M2' ,'Red SAM AAA', 'Red SAM AAA 2', 'Red SAM SHORAD ZSU-23', 'Red SAM SHORAD Pantsir S1','Red Armour Group 2', 'Red Arty 2'}
 	}, 
 
 	airfield3 = {
 		blue = {'blueInfantry', 'blueArmor', 'bluePD2', 'bluePD1'},
-		red = {'Enemy ground forces','Red SAM AAA', 'Red SAM AAA 2', 'Red SAM SHORAD Pantsir S1', 'Red SAM SHORAD Tor M2' , 'Red SAM SHORAD SA-19', 'Red SAM SHORAD SA-19' , 'Red SAM SA-6','Red Armour Group 4','Red Armour Group 3', 'Red Arty 2'}
+		red = {'Enemy ground forces','Red SAM AAA', 'Red SAM AAA 2', 'Red SAM SHORAD Pantsir S1', 'Red SAM SHORAD Tor M2' , 'Red SAM SHORAD ZSU-23', 'Red SAM SHORAD ZSU-23' , 'Red SAM SA-6','Red Armour Group 4','Red Armour Group 3', 'Red Arty 2'}
 	},							 
    	generic = {
 		blue = {'blueInfantry', 'blueArmor', 'bluePD2'},
@@ -75,11 +75,11 @@ upgrades = {
 	},
 	deltafixed = {
 		blue = {'bluePD2', 'blueHAWK'},
-		red = { 'Red Armour Group', 'Red SAM SA-6','Red Armour Group 2', 'Red SAM SHORAD SA-19', 'Red SAM SHORAD SA-8','Red SAM SHORAD Pantsir S1'}
+		red = { 'Red Armour Group', 'Red SAM SA-6','Red Armour Group 2', 'Red SAM SHORAD ZSU-23', 'Red SAM SHORAD SA-8','Red SAM SHORAD Pantsir S1'}
 	},
 	bravofixed = {
 		blue = {'bluePD2', 'blueHAWK'},
-		red = { 'Red Armour Group','Red SAM SHORAD Tor M2','Red Armour Group 2', 'Red SAM SHORAD SA-19','Red SAM SHORAD SA-8','Red SAM SA-3'}
+		red = { 'Red Armour Group','Red SAM SHORAD Tor M2','Red Armour Group 2', 'Red SAM SHORAD ZSU-23','Red SAM SHORAD SA-8','Red SAM SA-3'}
 	},
 	juliettFixed = {
 		blue = {'bluePD2', 'blueHAWK', 'bluePD1', 'blueArmor'},
@@ -91,7 +91,7 @@ upgrades = {
 	},
 	HotelFixed = {
 		blue = {'bluePD2', 'blueHAWK', 'bluePD1'},
-		red = {'Red SAM SHORAD SA-19', 'Red SAM SA-2', 'Red SAM SHORAD SA-15', 'Red SAM AAA Fixed Hotel'}
+		red = {'Red SAM SHORAD ZSU-23', 'Red SAM SA-2', 'Red SAM SHORAD SA-15', 'Red SAM AAA Fixed Hotel'}
 	},
 	sa5 = {
 		blue = {'bluePD2', 'bluePD1'},
@@ -103,11 +103,11 @@ upgrades = {
 	},
 	insGeneric = {
 		blue = {'blueInfantry','bluePD2', 'blueArmor'},
-		red = {'Enemy ground forces','Red Armour Group','Red SAM AAA', 'Red SAM AAA 2','Red Armour Group 2','Red SAM SHORAD SA-19', 'Red SAM SHORAD SA-19' }
+		red = {'Enemy ground forces','Red Armour Group','Red SAM AAA', 'Red SAM AAA 2','Red Armour Group 2','Red SAM SHORAD ZSU-23', 'Red SAM SHORAD ZSU-23' }
 	},
 	damupgrade = {
 		blue = {'blueInfantry','bluePD2', 'blueArmor'},
-		red = {'Enemy ground forces','Red Armour Group 3','Red SAM AAA 3', 'Red SAM AAA 4','Red Armour Group 4','Red SAM SHORAD Tor M2', 'Red SAM SHORAD SA-19' }
+		red = {'Enemy ground forces','Red Armour Group 3','Red SAM AAA 3', 'Red SAM AAA 4','Red Armour Group 4','Red SAM SHORAD Tor M2', 'Red SAM SHORAD ZSU-23' }
 	},
 	insGenericFoxtrotFixed = {
 		blue = {'blueInfantry','bluePD2', 'blueArmor'},
@@ -115,15 +115,15 @@ upgrades = {
 	},
 	insMaximum = {
 		blue = {'blueInfantry'},
-		red = {'Enemy ground forces','Red SAM AAA', 'Red SAM AAA 2', 'Enemy ground forces','Red Armour Group','Red SAM SHORAD SA-19', 'Red SAM SHORAD SA-19' ,'Red Armour Group 2','Red SAM SHORAD SA-15', 'Red SAM SHORAD SA-15'}
+		red = {'Enemy ground forces','Red SAM AAA', 'Red SAM AAA 2', 'Enemy ground forces','Red Armour Group','Red SAM SHORAD ZSU-23', 'Red SAM SHORAD ZSU-23' ,'Red Armour Group 2','Red SAM SHORAD SA-15', 'Red SAM SHORAD SA-15'}
 	},
 	insMinimum = {
 		blue = {'blueInfantry','bluePD2'},
-		red = {'Enemy ground forces','Red SAM AAA', 'Red SAM AAA 2','Red SAM SHORAD SA-19', 'Red SAM SHORAD SA-19' }
+		red = {'Enemy ground forces','Red SAM AAA', 'Red SAM AAA 2','Red SAM SHORAD ZSU-23', 'Red SAM SHORAD ZSU-23' }
 	},
 	insSAM = {
 		blue = {'bluePD2', 'blueHAWK', 'bluePD1'},
-		red = {'Red SAM AAA', 'Red SAM AAA 2', 'Red Armour Group', 'Red SAM SHORAD SA-19', 'Red SAM SHORAD SA-19' ,'Red SAM SHORAD SA-15', 'Red SAM SHORAD SA-15'}
+		red = {'Red SAM AAA', 'Red SAM AAA 2', 'Red Armour Group', 'Red SAM SHORAD ZSU-23', 'Red SAM SHORAD ZSU-23' ,'Red SAM SHORAD SA-15', 'Red SAM SHORAD SA-15'}
 	},
 	ewr = {
 		blue = {'blueInfantry'},
@@ -167,7 +167,7 @@ upgrades = {
 	},
 	bengurionDefence = {
 		blue = {},
-		red = {'Red SAM SHORAD SA-15 Fixed BenGurion','Red SAM SA-10 Fixed Benguriondefence', 'Red SAM SHORAD SA-19 Fixed Benguriondefence'}
+		red = {'Red SAM SHORAD SA-15 Fixed BenGurion','Red SAM SA-10 Fixed Benguriondefence', 'Red SAM SHORAD ZSU-23 Fixed Benguriondefence'}
 	},
 	SilkDefence = {
 		blue = {},
@@ -175,16 +175,16 @@ upgrades = {
 	},
 	ramatdavidDefence = {
 		blue = {},
-		red = {'Red SAM SHORAD SA-15','Red SAM SHORAD SA-19','Red SAM AAA','Red SAM SA-11'}
+		red = {'Red SAM SHORAD SA-15','Red SAM SHORAD ZSU-23','Red SAM AAA','Red SAM SA-11'}
 	},
 	jordanDefence = {
 		blue = {},
-		red = {'Red SAM SA-2', 'Red SAM SA-2', 'Red SAM SA-2', 'Red SAM SHORAD SA-19', 'Red SAM AAA', 'Red SAM SHORAD SA-15'}
+		red = {'Red SAM SA-2', 'Red SAM SA-2', 'Red SAM SA-2', 'Red SAM SHORAD ZSU-23', 'Red SAM AAA', 'Red SAM SHORAD SA-15'}
 	},
 
 	incirlikdefence = {
 		blue = {},
-		red = {'Red Armour Group 4','Red SAM SA-11','Red SAM SHORAD SA-19','Red SAM SHORAD SA-15'}
+		red = {'Red Armour Group 4','Red SAM SA-11','Red SAM SHORAD ZSU-23','Red SAM SHORAD SA-15'}
 	},
 
 	hidden1Group = {
@@ -225,10 +225,10 @@ local cwSwap = {
 	['bluePD']  											= 'bluePD Coldwar',
 	['blueArmor']  											= 'blueArmor_Cw',
 	['blueHAWK']  											= 'blueHAWK_CW',
-	['Red SAM SHORAD Tor M2']  								= { mode='random', list={'Red SAM SHORAD SA-19', 'Red SAM SHORAD SA-8', 'Red SAM SHORAD SA-13', 'Red SAM SHORAD SA-9', 'Red SAM SHORAD SA-15'} },
-	['Red SAM SHORAD Pantsir S1']  							= { mode='random', list={'Red SAM SHORAD SA-19', 'Red SAM SHORAD SA-8', 'Red SAM SHORAD SA-13', 'Red SAM SHORAD SA-9', 'Red SAM SHORAD SA-15'} },
-	['Red SAM SHORAD Tor M2 Fixed Bravo']                	= 'Red SAM SHORAD SA-19 Fixed Bravo',
-	['Red SAM SHORAD Tor M2 Fixed SAITE']                 	= 'Red SAM SHORAD SA-19 Fixed SAITE',
+	['Red SAM SHORAD Tor M2']  								= { mode='random', list={'Red SAM SHORAD ZSU-23', 'Red SAM SHORAD SA-8', 'Red SAM SHORAD SA-7', 'Red SAM SHORAD SA-9', 'Red SAM SHORAD SA-15'} },
+	['Red SAM SHORAD Pantsir S1']  							= { mode='random', list={'Red SAM SHORAD ZSU-23', 'Red SAM SHORAD SA-8', 'Red SAM SHORAD SA-7', 'Red SAM SHORAD SA-9', 'Red SAM SHORAD SA-15'} },
+	['Red SAM SHORAD Tor M2 Fixed Bravo']                	= 'Red SAM SHORAD ZSU-23 Fixed Bravo',
+	['Red SAM SHORAD Tor M2 Fixed SAITE']                 	= 'Red SAM SHORAD ZSU-23 Fixed SAITE',
 	['Red SAM SHORAD SA-15 Fixed']                        	= 'Red SAM SHORAD SA-8 Fixed',
 	['Red SAM SHORAD SA-15 Fixed HiddenGroup South']      	= 'Red SAM SHORAD SA-8 Fixed HiddenGroup South',
 	['Red SAM SHORAD SA-15 EWR Group Fixed']              	= 'Red SAM SHORAD SA-8 EWR Group Fixed',
@@ -285,10 +285,10 @@ local SamSwap = {
 	['Red SAM SA-11']   = { mode='random', list={'Red SAM SA-2', 'Red SAM SA-3', 'Red SAM SA-6'} },}
 
 local SamSwapNoTorM2AndPantsir = {
-	['Red SAM SHORAD Tor M2 Fixed Bravo']                 = 'Red SAM SHORAD SA-19 Fixed Bravo',
-	['Red SAM SHORAD Tor M2 Fixed SAITE']                 = 'Red SAM SHORAD SA-19 Fixed SAITE',
-	['Red SAM SHORAD Tor M2']  							  = { mode='random', list={'Red SAM SHORAD SA-19', 'Red SAM SHORAD SA-8', 'Red SAM SHORAD SA-13', 'Red SAM SHORAD SA-9'} },
-	['Red SAM SHORAD Pantsir S1']  						  = { mode='random', list={'Red SAM SHORAD SA-19', 'Red SAM SHORAD SA-8', 'Red SAM SHORAD SA-13', 'Red SAM SHORAD SA-9'} },
+	['Red SAM SHORAD Tor M2 Fixed Bravo']                 = 'Red SAM SHORAD ZSU-23 Fixed Bravo',
+	['Red SAM SHORAD Tor M2 Fixed SAITE']                 = 'Red SAM SHORAD ZSU-23 Fixed SAITE',
+	['Red SAM SHORAD Tor M2']  							  = { mode='random', list={'Red SAM SHORAD ZSU-23', 'Red SAM SHORAD SA-8', 'Red SAM SHORAD SA-7', 'Red SAM SHORAD SA-9'} },
+	['Red SAM SHORAD Pantsir S1']  						  = { mode='random', list={'Red SAM SHORAD ZSU-23', 'Red SAM SHORAD SA-8', 'Red SAM SHORAD SA-7', 'Red SAM SHORAD SA-9'} },
 }
 
 local SamSwapNoSA15 = {
@@ -299,7 +299,7 @@ local SamSwapNoSA15 = {
 	['Red SAM SHORAD SA-15 Fixed HiddenGroup South']      	= 'Red SAM SHORAD SA-8 Fixed HiddenGroup South',
 	['Red SAM SHORAD SA-15 EWR Group Fixed']              	= 'Red SAM SHORAD SA-8 EWR Group Fixed',
 	['Red SAM SHORAD SA-15 Fixed BenGurion']              	= 'Red SAM SHORAD SA-8 Fixed BenGurion',
-	['Red SAM SHORAD SA-15']  							    = { mode='random', list={'Red SAM SHORAD SA-19', 'Red SAM SHORAD SA-8', 'Red SAM SHORAD SA-13', 'Red SAM SHORAD SA-9'} },
+	['Red SAM SHORAD SA-15']  							    = { mode='random', list={'Red SAM SHORAD ZSU-23', 'Red SAM SHORAD SA-8', 'Red SAM SHORAD SA-7', 'Red SAM SHORAD SA-9'} },
 }
 
 if NoSA10AndSA11 == true then
@@ -323,9 +323,9 @@ RandomRedPool = {
 	-- SHORAD
 	"Red SAM SHORAD Pantsir S1",
 	"Red SAM SHORAD SA-15",
-	"Red SAM SHORAD SA-19",
+	"Red SAM SHORAD ZSU-23",
 	"Red SAM SHORAD SA-8",
-	"Red SAM SHORAD SA-13",
+	"Red SAM SHORAD SA-7",
 	"Red SAM SHORAD SA-9",
 	"Red SAM SHORAD Tor M2",
 	-- AAA
@@ -434,7 +434,7 @@ RandomBlueGroups = true
 AllowScriptedSupplies = AllowScriptedSupplies ~= false
 
 -- Enemy ground forces, Red Armor Group, Red SAM SHORAD SA-8, Red SAM SA-3, Red SAM SHORAD SA-15, redSA5, Red EWR
--- Enemy ground forces, Red Armour Group, Red SAM SHORAD SA-19
+-- Enemy ground forces, Red Armour Group, Red SAM SHORAD ZSU-23
 -- blueInfantry, blueArmor, blueRed SAM SHORAD, blueHAWK, bluePATRIOT, bluePD
 -- blueShip
 
